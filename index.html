@@ -15,23 +15,32 @@
         <!-- Navigation -->
         <nav>
             <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="my_story.html">My Story</a></li>
-                <li><a href="my_interests.html">My Interests</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="index.html">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html#who_am_i">Who am I?</a>
+                        <a href="index.html#other">Other sites</a>
+                        <a href="index.html#contact">Contact me!</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="active dropbtn" href="my_story.html">My Story</a>
+                    <div class="dropdown-content">
+                        <a href="my_story.html#undergrad">My undergrad years</a>
+                        <a href="my_story.html#esl_teacher">My time as an <abbr title="English as a Second Language">ESL</abbr> teacher</a>
+                        <a href="my_story.html#comp_sci">My time as a computer science student</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="my_interests.html">Chinese history and culture</a>
+                    <div class="dropdown-content">
+                        <a href="my_interests.html#chinese">Chinese history and culture</a>
+                        <a href="my_interests.html#capoeira">Capoeira</a>
+                        <a href="my_interests.html#boardgames">Boardgames</a>
+                    </div>
+                </li>
             </ul>
         </nav>
-
-        <main>
-            <!-- Contents -->
-            <section>
-                <a class="anchor" id="top"></a>
-                <h3>Contents</h3>
-                <ol>
-                    <li><a href="#who_am_i">Who am I?</a></li>
-                    <li><a href="#other">Other sites</a></li>
-                    <li><a href="#contact">Contact me!</a></li>
-                </ol>
-            </section>
 
             <!-- Introduction -->
             <section>
@@ -75,8 +84,6 @@
                 </address>
             </section>
         </main>
-
-        <p><a class="btnLink" href=#top>Top</a></p>
 
         <footer>
             <p><small>Copyright &copy; 2020 Taylor Liss</small></p>
