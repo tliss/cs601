@@ -1,15 +1,18 @@
-html {
+body {
     background-color: #DFFDFF;
+    margin: 0;
 }
 
 * {
     color: #4F6367;
-    font-family: Roboto, Arial, Helvetica, sans-serif;;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Rubik, Arial, Helvetica, sans-serif;; 
+    font-family: Rubik, Arial, Helvetica, sans-serif;
 }
+
+/* Custom buttons */
 
 a.btnLink {
     background-color: #7A9E9F;
@@ -29,4 +32,47 @@ a.btnLink {
 
 a.btnLink:hover {
     opacity: 1;
+}
+
+/* Navbar Styles */
+
+nav {
+    margin-top: 60px;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4F6367;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+nav > ul > li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+nav > ul > li > a:hover:not(.active) {
+    background-color: #90BEDE;
+  }
+  
+.active {
+    background-color: #7A9E9F;
+}
+
+/* This code allows content links to scroll to the correct location without the section
+title being hiddent by the navbar. Solution found here: https://stackoverflow.com/a/13117744/4298546 */
+a.anchor:target {
+    position: relative;
+    top: -60px;
 }
