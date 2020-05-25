@@ -3,56 +3,77 @@
     <head>
         <title>Taylor Liss | Home</title>
         <meta charset="UTF-8">
+        <link href="stylesheets/styles.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     </head>
     <body>
         <h1 id="top">Taylor Liss</h1>
         <!-- Navigation -->
         <nav>
-        <b>Home</b> | <a href="my_story.html">My story</a> | <a href="my_interests.html">My interests</a>
+            <b>Home</b> | <a href="my_story.html">My story</a> | <a href="my_interests.html">My interests</a>
         </nav>
         
-        <h2>Home</h2>
+        <main>
+            <h2>Home</h2>
 
-        <!-- Contents -->
-        <h3>Contents</h3>
-        <ol>
-            <li><a href="#who_am_i">Who am I?</a></li>
-            <li><a href="#other">Other sites</a></li>
-            <li><a href="#contact">Contact me!</a></li>
-        </ol>
+            <!-- Contents -->
+            <section>
+                <h3>Contents</h3>
+                <ol>
+                    <li><a href="#who_am_i">Who am I?</a></li>
+                    <li><a href="#other">Other sites</a></li>
+                    <li><a href="#contact">Contact me!</a></li>
+                </ol>
+            </section>
 
-        <!-- Introduction -->
-        <h3 id="who_am_i">Who am I?</h3>
+            <!-- Introduction -->
+            <section>
+                <h3 id="who_am_i">Who am I?</h3>
 
-        <figure>
-            <img src="images/mountain.jpg" alt="Me on a mountain in Qinghai, China in 2008">
-            <figcaption>Me on a mountain in Qinghai, China in 2008</figcaption>
-        </figure>
+                <figure>
+                    <img src="images/mountain.jpg" alt="Me on a mountain in Qinghai, China in 2008">
+                    <figcaption>Me on a mountain in Qinghai, China in 2008</figcaption>
+                </figure>
+            
 
-        <p>Hi! My name is <strong>Taylor Liss</strong>. I am a 33 year old software developer from Quincy, Massachusetts. 
-            This website is an introduction to who I am, what I do, and how I got to where I am today. 
-            At the top are some links to pages going into further detail on my background. I hope you enjoy
-            learning all about me!</p>
-    
-        <!-- Personal links -->
-        <h3 id="other">Other Sites</h3>
-        <p>Check me out on some of these other sites:</p>
-        <ul>
-            <li><a href="http://www.tayloraliss.com/">My personal website</a></li>
-            <li><a href="https://twitter.com/samort7">My Twitter account</a></li>
-            <li><a href="https://www.youtube.com/user/Samort7/">My YouTube channel</a></li>
-            <li><a href="https://github.com/tliss/">My GitHub account</a></li>
-            <li><a href="https://stackoverflow.com/users/4298546/taylor-liss">My StackOverflow account</a></li>
-            <li><a href="https://www.linkedin.com/in/taylorliss/">My LinkedIn account</a></li>
-        </ul>
+                <p>Hi! My name is <strong>Taylor Liss</strong>. I am a 33 year old software developer from Quincy, Massachusetts. 
+                    This website is an introduction to who I am, what I do, and how I got to where I am today. 
+                    At the top are some links to pages going into further detail on my background. I hope you enjoy
+                    learning all about me!</p>
+            </section>
 
-        <!-- Contact info -->
-        <h3 id="contact">Contact me!</h3>
-        <address>
-            <p><a href="mailto:tayloraliss@gmail.com">tayloraliss@gmail.com</a></p>
-            <p><a href="tel:617-922-4633">(617) 922-4633</a></p>            
-        </address>
+            <!-- Personal links -->
+            <section>
+                <h3 id="other">Other Sites</h3>
+                <p>Check me out on some of these other sites:</p>
+                <ul>
+                    <a class="btnLink" href="http://www.tayloraliss.com/"><i class="fas fa-link"></i> Website</a>
+                    <a class="btnLink" href="https://twitter.com/samort7"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a class="btnLink" href="https://www.youtube.com/user/Samort7/"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a class="btnLink" href="https://github.com/tliss/"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="btnLink" href="https://stackoverflow.com/users/4298546/taylor-liss"><i class="fab fa-stack-overflow"></i> StackOverflow</a>
+                    <a class="btnLink" href="https://www.linkedin.com/in/taylorliss/"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </ul>
+            </section>
 
-        <p><a href=#top>Top</a></p>
+            <!-- Contact info -->
+            <section>
+                <h3 id="contact">Contact me!</h3>
+                <address>
+                    <p><a href="mailto:tayloraliss@gmail.com">tayloraliss@gmail.com</a></p>
+                    <p><a href="tel:617-922-4633">(617) 922-4633</a></p>            
+                </address>
+            </section>
+        </main>
+
+        <p><a class="btnLink" href=#top>Top</a></p>
+
+        <footer>
+            <p><small>Copyright &copy; 2020 Taylor Liss</small></p>
+        </footer>
     </body>
 </html>
