@@ -28,7 +28,7 @@ h1 {
 }
 
 main {
-    margin: 0px 25%;            /* Keeps footer at bottom */
+    margin: 0px 25%;
     flex-grow: 1;               /* Keeps footer at bottom */
 }
 
@@ -56,6 +56,10 @@ audio, video {
 
 main > section > figure > div > figcaption {
     text-align: center;
+}
+
+.hidden-text {
+    display: none;
 }
 
 /* For address page */

@@ -1,0 +1,48 @@
+html, body {
+    width: auto;                /* Keeps footer at bottom */
+    height: auto;               /* Keeps footer at bottom */
+}
+
+nav, audio, video, .download {
+    display: none;
+}
+
+*, h1, h2, h3, h4, h5, h6 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+html, body {
+    background-color: white;
+}
+
+main {
+    margin: 10%;
+}
+
+figure {
+    text-align: center;
+}
+
+img:not(.resume>img) {
+    max-width: 50%;
+    box-shadow: none;
+    filter: grayscale(100%);
+}
+
+footer {
+    align-self: center;
+}
+
+.hidden-text {
+    display: contents;
+}
+
+.link-container {
+    display: none;
+}
