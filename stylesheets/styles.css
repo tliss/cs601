@@ -41,11 +41,6 @@ main > section > figure > div > figcaption {
     text-align: center;
 }
 
-footer {
-    margin-right: 50px;
-    float:right;
-}
-
 /* This code allows content links to scroll to the correct location without the section
 title being hiddent by the navbar. Solution found here: https://stackoverflow.com/a/13117744/4298546 */
 a.anchor:target {
@@ -58,7 +53,7 @@ a.anchor:target {
 a.btnLink {
     background-color: #FF442E;
     border: none;
-    color: #133C55;
+    color: white;
     padding: 16px 32px;
     text-align: center;
     font-size: 16px;
@@ -69,6 +64,10 @@ a.btnLink {
     cursor: pointer;
     border-radius: 4px;
     font-weight: bold;
+}
+
+.btnLink > .fas {
+    color: white;
 }
 
 a.btnLink:hover {

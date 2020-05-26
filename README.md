@@ -22,6 +22,7 @@ This README.md file documents the changes and additions done to personal website
 * Increased margins on content for a more pleasant reading experience
 * Added box-shadows to `<img>`
 * Added stylized download button for audio and video
+* Created new pages to host external Links, Contact info, and Resume
 
 ### Changes for Assignment 3
 
