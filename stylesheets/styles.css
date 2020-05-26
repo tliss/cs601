@@ -55,7 +55,6 @@ main > section > figure > div > figcaption {
 #address {
     text-align: center;
     border: 4px solid #4F6367;
-    background-color: #90BEDE;
     border-radius: 4px;
     width: 30%;
     min-width: 251px;
@@ -76,7 +75,7 @@ footer {
 title being hiddent by the navbar. Solution found here: https://stackoverflow.com/a/13117744/4298546 */
 a.anchor:target {
     position: relative;
-    top: -60px;
+    top: -50px;
 }
 
 /* Custom buttons */
@@ -112,7 +111,7 @@ a.btnLink:hover {
 /* Navbar styling */
 
 nav {
-    margin-top: 60px;
+    margin-top: 35px;
     z-index: 1;         /* Prevents <audio> tag from appearing infront of <nav> */
     position: relative; /* Prevents <audio> tag from appearing infront of <nav> */
 }
@@ -206,5 +205,9 @@ td.boardGame {
 td.boardBox {
     text-align: center;
     width: 150px;
+}
+
+td.boardDesc {
+    padding: 0px 20px;
 }
 
