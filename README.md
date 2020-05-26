@@ -13,6 +13,7 @@ This README.md file documents the changes and additions done to personal website
 * Created the README.md file
 * Updated font to use Roboto and Rubik from Google Fonts
 * Added new HTML semantic elements including `<main>`, `<section>`, and `<footer>`
+* Implemented flexbox to have footer "stick" to the bottom of the page
 * Added a new navbar and special `anchor` tags to link throughout the page correctly without section titles being hidden (see note in CSS)
 * Added new buttons linking to external sites and added icons from Font Awesome
 * `<img>` now scale based on browser window size
