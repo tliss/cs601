@@ -17,6 +17,11 @@ This README.md file documents the changes and additions done to personal website
 * Added new buttons linking to external sites and added icons from Font Awesome
 * `<img>` now scale based on browser window size
 * Moved "contents" section into dropdown menu inside nav bar
+* Used flexbox to horizontally align `<img>` and `<figcaption>`
+* Centered audio and video
+* Increased margins on content for a more pleasant reading experience
+* Added box-shadows to `<img>`
+* Added stylized download button for audio and video
 
 ### Changes for Assignment 3
 

@@ -13,13 +13,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main {
-    margin: 0px 120px;
+    margin: 0px 25%;
 }
 
 img {
     max-width: 100%;
-
     height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main > section > figure, div.imgWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+audio, video {
+    margin: 0 auto; 
+    display: block;
+}
+
+main > section > figure > div > figcaption {
+    text-align: center;
 }
 
 /* This code allows content links to scroll to the correct location without the section
@@ -32,7 +46,7 @@ a.anchor:target {
 /* Custom buttons */
 
 a.btnLink {
-    background-color: #7A9E9F;
+    background-color: #FF442E;
     border: none;
     color: #133C55;
     padding: 16px 32px;
@@ -51,24 +65,33 @@ a.btnLink:hover {
     opacity: 1;
 }
 
+.download {
+    text-align: center;
+}
+
 /* Navbar Styles */
 
 nav {
     margin-top: 60px;
+    z-index: 1;         /* Prevents <audio> tag from appearing infront of <nav> */
+    position: relative; /* Prevents <audio> tag from appearing infront of <nav> */
 }
 
 nav > ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     background-color: #4F6367;
     position: fixed;
     top: 0;
     width: 100%;
+    /* padding: 0% 15%; */
+    padding-left: 15%;
+    float: left;
 }
 
-nav > ul > li {
-    float: left;
+.print {
+    float: right;
+    margin-right: 30%;
 }
 
 nav > ul > li > a, .dropbtn {
@@ -108,7 +131,9 @@ nav > ul > li.dropdown {
     text-align: left;
 }
   
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
   
 .dropdown:hover .dropdown-content {
     display: block;
