@@ -23,8 +23,21 @@ This README.md file documents the changes and additions done to personal website
 * Increased margins on content for a more pleasant reading experience
 * Added box-shadows to `<img>`
 * Added stylized download button for audio and video
+* Added styling to table of favorite boardgames
 * Created new pages to host external Links, Contact info, and Resume
-* Used CSS Grid to add buttons into 
+* Used CSS Grid to add buttons on Links page
+* Created a new stylesheet for printing. Stylesheet has the following features:
+    * Uses a more universal font
+    * Removes navbar
+    * Makes font black and removes background colors
+    * Makes images smaller
+    * Makes images grayscale (note, this causes a little slowdown when you click "print" - just be patient!)
+    * Expands margins
+    * Removes video and audio players
+    * Removes download buttons
+    * On the "links" page, printing will show actual URLs instead of buttons!
+    * On the "resume" page, printing will show resume, instead of the download button!
+* Please note - I have a "print" button that is currently deactivated as we are not permitted to use JavaScript for this assignment as of yet. Will activate it in a later module!
 
 ### Changes for Assignment 3
 

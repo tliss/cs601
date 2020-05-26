@@ -29,7 +29,7 @@ figure {
     text-align: center;
 }
 
-img:not(.resume>img) {
+img:not(.resume) {
     max-width: 50%;
     box-shadow: none;
     filter: grayscale(100%);
