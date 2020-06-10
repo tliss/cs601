@@ -39,18 +39,8 @@ This README.md file documents the changes and additions done to personal website
     * On the "resume" page, printing will show resume, instead of the download button!
 * Please note - I have a "print" button that is currently deactivated as we are not permitted to use JavaScript for this assignment as of yet. Will activate it in a later module!
 
-### Changes for Assignment 3
+### Changes after Assignment 2:
 
-n/a
-
-### Changes for Assignment 4
-
-n/a
-
-### Changes for Assignment 5
-
-n/a
-
-### Changes for Assignment 6
-
-n/a
+* Enabled print button for every page
+* Add javascript to make pages printable
+* Added placeholders for educatoin, projects, gallery, and guestbook
