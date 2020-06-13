@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Taylor Liss | My Interests</title>
+        <title>Taylor Liss | Gallery</title>
         <meta charset="UTF-8">
         <link href="stylesheets/styles.css" rel="stylesheet">
         <link href="stylesheets/print.css" rel="stylesheet" media="print">
@@ -10,6 +10,7 @@
         <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <script src="scripts/script.js"></script>
     </head>
     <body>
 
@@ -64,7 +65,28 @@
 
         <main>
             <section>
-                <h3>Photo gallery goes here</h3>
+                <h3>Photo Gallery</h3>
+                <!-- Photo gallery code adapted from here: https://youtu.be/FZrHoAUkHpE -->
+                <!-- And here: https://www.sitepoint.com/make-a-simple-javascript-slideshow-without-jquery/ -->
+                <div class="slide-container">
+                    <span id="slider-image-1"></span>
+                    <span id="slider-image-2"></span>
+                    <span id="slider-image-3"></span>
+                    <span id="slider-image-4"></span>
+                    <div class="image-container">
+                        <img src="images/gallery/1.png" class="slider-image">
+                        <img src="images/gallery/2.png" class="slider-image">
+                        <img src="images/gallery/3.png" class="slider-image">
+                        <img src="images/gallery/4.png" class="slider-image">
+                    </div>
+                    <div class="button-container">
+                        <a href="#slider-image-1" class="slider-button showing"></a>
+                        <a href="#slider-image-2" class="slider-button"></a>
+                        <a href="#slider-image-3" class="slider-button"></a>
+                        <a href="#slider-image-4" class="slider-button"></a>
+                    </div>
+                </div>
+
             </section>
         </main>
 
