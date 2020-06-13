@@ -324,7 +324,7 @@ td.boardDesc {
     margin: 0 auto;
 }
 
-.project button {
-    display: block;
+.project a {
+    display: inline-block;
     margin: auto;
 }
