@@ -54,7 +54,6 @@ audio, video {
     display: block;
 }
 
-
 figure {
     display: table;
     text-align: center;
@@ -64,7 +63,6 @@ figure {
 figcaption {
     display: table-caption;
     caption-side: bottom;
-    
 }
 
 .hidden-text {
@@ -327,4 +325,87 @@ td.boardDesc {
 .project a {
     display: inline-block;
     margin: auto;
+}
+
+/* Guestbook styling */
+
+#app {
+    text-align: center;
+}
+
+.guest-form {
+    border: 2px solid #4F6367;
+    border-radius: 10px;
+    display: inline-block;
+    width: 500px;
+    padding-bottom: 1em;
+}
+
+.input-area {
+    text-align: center;
+}
+
+input, textarea {
+    width: 75%;
+}
+
+textarea {
+    height: 70px;
+    resize: none;
+}
+
+label {
+    margin-bottom: 0em;
+    margin-top: 1em;
+    display: block;
+    width: 75%;
+    text-align: left;
+    margin-left: 12%;
+}
+
+textarea {
+    margin-bottom: 1em;
+}
+
+input[type="submit"] {
+    width: fit-content;
+}
+
+#form-error {
+    margin-top: .5em;
+}
+
+#form-error b{
+    color: red;
+}
+
+#form-error ul {
+    display: block;
+    width: 35%;
+    margin: auto;
+    text-align: left;
+    margin-top: .75em;
+}
+
+#form-error li {
+    color: red;
+}
+
+#comment-section {
+    border: 1px dotted red;
+    list-style-type: none;
+}
+
+#comment-section, h3 {
+    text-align: left;
+}
+
+.comment-name {
+    text-align: left;
+    font-weight: bold;
+}
+
+.comment-contents {
+    text-align: justify;
+    margin-right: 2em;
 }
