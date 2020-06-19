@@ -306,10 +306,18 @@ td.boardDesc {
 .project {
     border: 2px solid #4F6367;
     border-radius: 10px;
-    flex-basis: 49%;
     text-align: center;
     margin-bottom: .75em;
     padding-bottom: 1em;
+    flex-basis: 49%;
+    text-decoration: none;
+}
+.project:hover {
+    background-color: #f1f1f1;
+}
+
+.project h3 {
+    text-align: center;
 }
 
 .project p {
