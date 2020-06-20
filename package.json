@@ -1,0 +1,22 @@
+{
+  "name": "cs601_hw1_liss",
+  "version": "1.0.0",
+  "description": "Taylor Liss  \r CS601 Web Application Development  \r Summer 1, 2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tliss/cs601.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tliss/cs601/issues"
+  },
+  "homepage": "https://github.com/tliss/cs601#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
