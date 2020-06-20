@@ -34,7 +34,6 @@ Vue.component('comment-section', {
       }).then(function (response) {
         if (response.error) {
           console.err("There was an error " + response.error);
-          that.loginError = 'Error';
         } else {
           for (item of response){
             that.addComment(item);
@@ -92,11 +91,6 @@ Vue.component('guest-form', {
         this.$emit('comment-submitted', comment);
         this.name = null;
         this.comment = null;
-
-        var newComment = $("#comment-form").serializeArray()
-        console.log(newComment);
-
-
       } else {
         this.errors.length = 0;
         if (!this.name) this.errors.push('Name required.');
