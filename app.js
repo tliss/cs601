@@ -6,6 +6,20 @@ const app = express();
 const router = express.Router();
 app.use(express.static('./'));
 
+const bodyParser = require("body-parser");
+
+//Here we are configuring express to use body-parser as middle-ware.
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+const fs = require('fs');
+
+router.post('/saveComments', (request, response) => {
+    fs.writeFile(__dirname + '/public/json/comments.json', JSON.stringify(request.body), function (err) {
+        if (err) throw err;
+    });
+});
+
 // res.json() sends a JSON response
 // res.sendFile() sends a file
 // res.send() sends a string

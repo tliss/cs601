@@ -25,6 +25,13 @@ Vue.component('comment-section', {
   methods: {
     addComment(comment) {
       this.comments.push(comment);
+      $.ajax({
+        method: "POST",
+        url: "/saveComments",
+        contentType: 'application/json',
+        dataType: "json",
+        data: JSON.stringify(this.comments)
+      });
     },
     getComments: function () {
       var that = this;
@@ -36,7 +43,7 @@ Vue.component('comment-section', {
           console.err("There was an error " + response.error);
         } else {
           for (item of response){
-            that.addComment(item);
+            that.comments.push(item);
           }
         }
       }).catch(function (err) {
