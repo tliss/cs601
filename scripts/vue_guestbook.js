@@ -52,7 +52,7 @@ Vue.component('guest-form', {
 
     <input type="submit" value="Submit">  
 
-    </form>    
+    </form>
     `,
   data() {
     return {
