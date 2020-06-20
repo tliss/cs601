@@ -25,13 +25,34 @@ Vue.component('comment-section', {
   methods: {
     addComment(comment) {
       this.comments.push(comment);
+    },
+    getComments: function () {
+      var that = this;
+      $.ajax({
+        url: 'public/json/comments.json',
+        method: 'GET'
+      }).then(function (response) {
+        if (response.error) {
+          console.err("There was an error " + response.error);
+          that.loginError = 'Error';
+        } else {
+          for (item of response){
+            that.addComment(item);
+          }
+        }
+      }).catch(function (err) {
+        console.error(err);
+      });
     }
+  },
+  created() {
+    this.getComments();
   }
 });
 
 Vue.component('guest-form', {
   template: `
-    <form class="guest-form" @submit.prevent="onSubmit">
+    <form id="comment-form" class="guest-form" @submit.prevent="onSubmit">
 
     <div id="form-error" v-if="errors.length">
       <b>Please correct the following error(s):</b>
@@ -42,12 +63,12 @@ Vue.component('guest-form', {
 
     <div class="input-area">
         <label for="name">Name:</label>
-        <input id="name" v-model="name">
+        <input id="name" name="name" v-model="name">
     </div>
     
     <div class="input-area">
         <label for="comment">Comment:</label>      
-        <textarea id="comment" v-model="comment"></textarea>
+        <textarea name="comment" id="comment" v-model="comment"></textarea>
     </div>
 
     <input type="submit" value="Submit">  
@@ -71,6 +92,11 @@ Vue.component('guest-form', {
         this.$emit('comment-submitted', comment);
         this.name = null;
         this.comment = null;
+
+        var newComment = $("#comment-form").serializeArray()
+        console.log(newComment);
+
+
       } else {
         this.errors.length = 0;
         if (!this.name) this.errors.push('Name required.');
@@ -80,8 +106,6 @@ Vue.component('guest-form', {
   }
 });
 
-
-
 var app = new Vue({
-  el: '#app'
+  el: '#app',
 });
