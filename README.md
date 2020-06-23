@@ -41,6 +41,8 @@ This README.md file documents the changes and additions done to personal website
 
 ### Changes after Assignment 2:
 
-* Enabled print button for every page
-* Add javascript to make pages printable
-* Added placeholders for educatoin, projects, gallery, and guestbook
+* Added a "My Projects" page that uses flexbox to highlight a few of the personal projects I have done in the past.
+* Added a "Gallery" page that uses Vue to show interesting photos about myself
+* Added a "Guestbook" page that uses Vue, JavaScript, and AJAX to record comments in a JSON file.
+* Converted the whole site to use Node.js with Express and Express routing.
+* Hosted the site on a Digital Ocean virtual machine to make it available to the internet. Can be accessed at http://danktop.us/
