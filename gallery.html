@@ -9,7 +9,6 @@
         <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-        <script src="public/scripts/script.js"></script>
     </head>
     <body>
 
@@ -56,35 +55,22 @@
             </ul>
         </nav>
 
-        <main>
-            <section>
-                <h3>Photo Gallery</h3>
-                <!-- Photo gallery code adapted from here: https://youtu.be/FZrHoAUkHpE -->
-                <!-- And here: https://www.sitepoint.com/make-a-simple-javascript-slideshow-without-jquery/ -->
-                <div class="slide-container">
-                    <span id="slider-image-1"></span>
-                    <span id="slider-image-2"></span>
-                    <span id="slider-image-3"></span>
-                    <span id="slider-image-4"></span>
-                    <div class="image-container">
-                        <img src="public/images/gallery/1.png" class="slider-image">
-                        <img src="public/images/gallery/2.png" class="slider-image">
-                        <img src="public/images/gallery/3.png" class="slider-image">
-                        <img src="public/images/gallery/4.png" class="slider-image">
-                    </div>
-                    <div class="button-container">
-                        <a href="#slider-image-1" class="slider-button showing"></a>
-                        <a href="#slider-image-2" class="slider-button"></a>
-                        <a href="#slider-image-3" class="slider-button"></a>
-                        <a href="#slider-image-4" class="slider-button"></a>
-                    </div>
-                </div>
+        <main id="gallery-main">
 
-            </section>
+            <div id="app">
+                <Gallery></Gallery>
+            </div>
+
         </main>
 
         <footer>
             <p><small>Copyright &copy; 2020 Taylor Liss</small></p>
         </footer>
+
+        <!-- Include Vue -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <!-- Inculde my Vue components -->
+        <script src="/public/scripts/vue_gallery.js"></script>
     </body>
 </html>
