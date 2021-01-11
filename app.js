@@ -65,6 +65,12 @@ router.get('/resume', function(req,res){
 });
 
 app.use('/', router);
-app.listen(process.env.port || 3000);
+//app.listen(process.env.port || 3000);
 
-console.log('Running at Port 3000');
+//console.log('Running at Port 3000');
+
+//Heroku Configuration
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+	console.log('App running on port ${ PORT } ');
+});
